@@ -2,7 +2,14 @@
   (:require [cowsay.text-formatter :refer :all]
             [clojure.test :refer :all]))
 
-(deftest test-formatter
+(deftest test-enclose
+  (testing "single words are wrapped"
+    (is (= " _____\n< moo >\n -----" (enclose ["moo"]))))
+  (testing "multiple lines are wrapped"
+    (let [expected-text " __________\n< moo      >\n< says cow >\n ----------"]
+      (is (= expected-text (enclose ["moo" "says cow"]))))))
+
+(deftest test-wrap
   (testing "Short phrases aren't wrapped"
     (is (= ["no line wraps"] (wrap "no line wraps" default-line-length))))
 
