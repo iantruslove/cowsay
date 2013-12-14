@@ -1,14 +1,20 @@
 # cowsay
-
-A Clojure library designed to ... well, that part is up to you.
+     _______________________ 
+    < Clojure talks cow too >
+     ----------------------- 
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
 
 ## Usage
 
-FIXME
+````clojure
+(nothing here yet) ;; moo
+````
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Ian Truslove, licensed under the MIT license (http://opensource.org/licenses/mit-license).
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
