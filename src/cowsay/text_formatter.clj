@@ -42,3 +42,8 @@
       lines
       (recur (conj lines (apply str (take line-length remainder)))
              (drop line-length remainder)))))
+
+(defn bubble
+  "Encloses the given text in a speech bubble"
+  [width text]
+  (enclose (wrap text width)))
