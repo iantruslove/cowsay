@@ -3,7 +3,7 @@
 
 (def default-line-length "Maximum single-line length of a cowsay" 39)
 
-(defn cowformat [s line-length]
+(defn wrap [s line-length]
   "Line wraps the string s appropriately for cowsaying.
   TODO:  give a crap about splitting on word boundaries."
   (loop [lines []
