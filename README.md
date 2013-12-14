@@ -11,7 +11,10 @@
 ## Usage
 
 ````clojure
-(nothing here yet) ;; moo
+(require 'cowsay.core)
+
+(println
+  (cowsay.core/cowsay "Clojure talks cow too"))
 ````
 
 ## License
